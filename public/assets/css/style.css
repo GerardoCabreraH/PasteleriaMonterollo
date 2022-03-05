@@ -1,0 +1,235 @@
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: justify;
+}
+
+/*Barra navegadora*/
+.img-navbar {
+    width: 50px;
+    height: 50px;
+}
+.navbarWeb {
+    background-color: #FCE6E2;
+}
+.navbarAdmin {
+    background-color: #FCE6E2;
+    width: 80%;
+    float: right;
+    padding: 25px 0;
+}
+#navbarBrandAdmin {
+    display: none;
+}
+
+/*Sidebar*/
+.img-sidebar {
+    width: 50px;
+    height: 50px;
+}
+.sidebarAdmin {
+    background-color: #ffcccc;
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    float: left;
+}
+.sidebarAdmin ul {
+    list-style-type: none;
+}
+.sidebarAdmin li a {
+    color: #000000;
+}
+.sidebarLogo {
+    border-bottom: #fc6344 1px solid;
+    width: 100%;
+    padding: 20px 0;
+}
+.sidebarContent {
+    width: 100%;
+    padding: 20px;
+}
+
+/*Login*/
+.img-login {
+    width: 150px;
+    height: 150px;
+}
+.login {
+    background-color: #ffcccc;
+}
+
+/*Inicio*/
+.hero {
+    background-image: url('../img/Pasteleria Monterrollo-Portada.png');
+    background-repeat: none;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 640px;
+}
+
+/*Secciones*/
+.section-light {
+    padding: 50px 15px;
+}
+.section-dark {
+    padding: 50px 15px;
+    background-color: #ffcccc;
+}
+.content {
+    width: 80%;
+    float: right;
+    position: relative;
+}
+
+/*About*/
+.img-about {
+    width: 500px;
+    height: 500px;
+}
+
+/*Dashboard*/
+.icon-dashboard {
+    font-size: 24px;
+    color: #ffffff;
+}
+#tablaDashboard.table {
+    width: 100%;
+}
+
+/*Pedidos*/
+.img-card {
+    width: 300px;
+    height: 200px;
+}
+.card-sabores {
+    width: 100%;
+}
+
+/*Formulario*/
+textarea {
+    resize: none;
+}
+
+/*Contacto*/
+.icon {
+    font-size: 24px;
+    color: #fc6344;
+}
+
+/*Footer*/
+.footer {
+    background-color: #fc6344;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+/*Imagen*/
+.drop-zone {
+    width: 100%;
+    height: 200px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    color: #cccccc;
+    border: 4px dashed #cccccc;
+    border-radius: 10px;
+}
+
+.drop-zone--over {
+    border-style: solid;
+}
+
+.drop-zone__input {
+    display: none;
+}
+
+.drop-zone__thumb {
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #cccccc;
+    background-size: cover;
+    position: relative;
+}
+
+.drop-zone__thumb::after {
+    content:  attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.75);
+    text-align: center;
+}
+.mt-76 {
+    margin: 76px 0 0 0;
+}
+
+@media only screen and (max-width: 768px){
+    #navbarBrandAdmin {
+        display: block;
+    }
+    .hero {
+        height: 400px;
+    }
+    .sidebarAdmin {
+        display: none;
+        width: 100%;
+        float: left;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        top: 60px;
+    }
+    .navbarAdmin {
+        width: 100%;
+        float: left;
+    }
+    .content {
+        width: 100%;
+        float: left;
+    }
+    #tablaDashboard.table thead {
+        display: none;
+    }
+    #tablaDashboard.table, #tablaDashboard.table tbody, #tablaDashboard.table tr, #tablaDashboard.table td {
+        display: block;
+        width: 100%;
+        border: none;
+    }
+    #tablaDashboard.table tr {
+        margin-bottom: 15px;
+        border: 1px #000 solid;
+    }
+    #tablaDashboard.table td {
+        text-align: center;
+        position: relative;
+    }
+    #tablaDashboard.table td a {
+        display: block;
+    }
+    #tablaDashboard.table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        font-weight: bold;
+    }
+}
