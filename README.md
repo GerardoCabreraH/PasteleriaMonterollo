@@ -2,7 +2,6 @@
 
 La práctica se implemento en el Framework Laravel y se subió al servidor. Consiste en una pastelería con un formulario para que el cliente haga su pedido mientras que el pastelero pueda ver las existencias de los sabores y adornos así como los ingresos.
 
-- [Pagina en el servidor](https://pasteleria.celtech.com.mx/).
 - [Repositorio donde se encuentra la práctica en HTML](https://github.com/GerardoCabreraH/FrontEndMisionHTML).
 
 Implementación al servidor local
